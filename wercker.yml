@@ -32,8 +32,8 @@ build:
           go test ./...
     - internal/docker-push:
         name: "Push the updated container as staged image(licenseplates-stage)"
-        username: "ravi_r_singhal"
-        password: "alphalabs4"
+        username: "${QUAY_IO_USERNAME}"
+        password: "${QUAY_IO_PASSWORD}"
         repository: quay.io/ravi_r_singhal/golang
         registry: https://quay.io
         tag: test      

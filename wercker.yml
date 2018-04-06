@@ -34,6 +34,6 @@ build:
         name: "Push the updated container as staged image(licenseplates-stage)"
         username: "${QUAY_IO_USERNAME}"
         password: "${QUAY_IO_PASSWORD}"
-        repository: ravi_r_singhal/golang
+        repository: rgsingha/golang
         registry: https://quay.io
         tag: test      

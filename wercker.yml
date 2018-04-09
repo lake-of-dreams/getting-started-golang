@@ -35,5 +35,5 @@ build:
         username: "${AZURE_IO_USERNAME}"
         password: "${AZURE_IO_PASSWORD}"
         repository: golangjp.azurecr.io/golang
-        registry: https://golangjp.azurecr.io/v2/
+        #registry: https://golangjp.azurecr.io/v2/
         tag: test      

@@ -32,8 +32,8 @@ build:
           go test ./...
     - internal/docker-push:
         name: "Push the updated container as staged image(licenseplates-stage)"
-        username: "${QUAY_IO_USERNAME}"
-        password: "${QUAY_IO_PASSWORD}"
-        repository: ravi_r_singhal/golang
-        registry: https://quay.io
+        username: "${AZURE_IO_USERNAME}"
+        password: "${AZURE_IO_PASSWORD}"
+        repository: golangjp.azurecr.io/golang
+        registry: https://golangjp.azurecr.io
         tag: test      

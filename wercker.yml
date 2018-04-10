@@ -30,20 +30,20 @@ build:
         name: go test
         code: |
           go test ./...
-    #- internal/docker-push:
-     #   name: "Push the updated container as staged image(licenseplates-stage)"
-      #  username: "${AZURE_IO_USERNAME}"
-       # password: "${AZURE_IO_PASSWORD}"
-       # repository: golangjp.azurecr.io/golang
-        #registry: https://golangjp.azurecr.io/v2/
-       # tag: test
     - internal/docker-push:
-        azure-client-id: $AZURE_CLIENT_ID
-        azure-client-secret: $AZURE_CLIENT_SECRET
-        azure-subscription-id: $AZURE_SUBSCRIPTION_ID
-        azure-tenant-id: $AZURE_TENANT_ID
-        azure-resource-group: $AZURE_RESOURCE_GROUP
-        azure-registry-name: golangus
-        azure-login-server: golangus.azurecr.io
-        repository: golang
+        name: "Push the updated container as staged image(licenseplates-stage)"
+        username: "${AZURE_IO_USERNAME}"
+        password: "${AZURE_IO_PASSWORD}"
+        repository: golangjp.azurecr.io/golang
+       # registry: https://golangjp.azurecr.io/v2/
+        tag: test
+    #- internal/docker-push:
+     #   azure-client-id: $AZURE_CLIENT_ID
+      #  azure-client-secret: $AZURE_CLIENT_SECRET
+       # azure-subscription-id: $AZURE_SUBSCRIPTION_ID
+       # azure-tenant-id: $AZURE_TENANT_ID
+       # azure-resource-group: $AZURE_RESOURCE_GROUP
+       # azure-registry-name: golangus
+       # azure-login-server: golangus.azurecr.io
+       # repository: golang
         tag: test

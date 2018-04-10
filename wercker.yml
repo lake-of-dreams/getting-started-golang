@@ -34,7 +34,7 @@ build:
         name: "Push the updated container as staged image(licenseplates-stage)"
         username: "${AZURE_IO_USERNAME}"
         password: "${AZURE_IO_PASSWORD}"
-        repository: golangjp.azurecr.io/golang
+        repository: golangjp.azurecr.io/golang1
        # registry: https://golangjp.azurecr.io/v2/
         tag: test
     #- internal/docker-push:

@@ -43,7 +43,7 @@ build:
         azure-subscription-id: $AZURE_SUBSCRIPTION_ID
         azure-tenant-id: $AZURE_TENANT_ID
         azure-resource-group: $AZURE_RESOURCE_GROUP
-        azure-registry-name: golangus
-        azure-login-server: golangus.azurecr.io
+        azure-registry-name: golangjp
+        azure-login-server: golangjp.azurecr.io
         repository: golang
         tag: test

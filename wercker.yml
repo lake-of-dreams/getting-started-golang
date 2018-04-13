@@ -37,7 +37,7 @@ build:
         username: "${DOCKER_IO_USERNAME}"
         password: "${DOCKER_IO_PASSWORD}"
         repository: rgsingha/golang
-        registry: https://docker.io
+        #registry: https://docker.io
         tag: test
     #- internal/docker-push:
      #   azure-client-id: $AZURE_CLIENT_ID

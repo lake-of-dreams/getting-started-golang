@@ -34,7 +34,9 @@ build:
         name: "Push the updated container as staged image(licenseplates-stage)"
         #username: "${QUAY_IO_USERNAME}"
         #password: "${QUAY_IO_PASSWORD}"
-        repository: ravi_r_singhal/golang
+        username: "${DOCKER_IO_USERNAME}"
+        password: "${DOCKER_IO_PASSWORD}"
+        repository: rgsingha/golang
         registry: https://docker.io
         tag: test
     #- internal/docker-push:

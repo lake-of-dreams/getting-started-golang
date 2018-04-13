@@ -35,7 +35,7 @@ build:
         #username: "${QUAY_IO_USERNAME}"
         #password: "${QUAY_IO_PASSWORD}"
         repository: ravi_r_singhal/golang
-        registry: https://quay.io/
+        registry: https://hub.docker.com
         tag: test
     #- internal/docker-push:
      #   azure-client-id: $AZURE_CLIENT_ID

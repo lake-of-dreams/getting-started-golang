@@ -36,8 +36,8 @@ build:
         password: "${QUAY_IO_PASSWORD}"
         #username: "${DOCKER_IO_USERNAME}"
         #password: "${DOCKER_IO_PASSWORD}"
-        repository: rgsingha/$$/golang
-        #registry: $  $
+        repository: httpd://quay.io
+        registry: rgsingha/golang
        # tag: test
     #- internal/docker-push:
      #   azure-client-id: $AZURE_CLIENT_ID

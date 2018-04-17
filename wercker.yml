@@ -36,7 +36,7 @@ build:
         password: "${QUAY_IO_PASSWORD}"
         #username: "${DOCKER_IO_USERNAME}"
         #password: "${DOCKER_IO_PASSWORD}"
-        repository: https://quay.io
+        repository: rgsingha/golang
         registry: rgsingha/golang
        # tag: test
     #- internal/docker-push:

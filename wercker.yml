@@ -32,13 +32,11 @@ build:
           go test ./...
     - internal/docker-push:
         name: "Push the updated container as staged image(licenseplates-stage)"
-        username: "rgsingha"
-        password: "alphalabs4"
-        #username: "${DOCKER_IO_USERNAME}"
-        #password: "${DOCKER_IO_PASSWORD}"
-        repository: rgsingha/golang
-        #registry: https://quay.io
-       # tag: test
+        username: "${QUAY_IO_USERNAME}"
+        password: "${QUAY_IO_PASSWORD}"
+        repository: ravi_r_singhal/golang
+        registry: https://quay.io
+        tag: test
     #- internal/docker-push:
      #   azure-client-id: $AZURE_CLIENT_ID
       #  azure-client-secret: $AZURE_CLIENT_SECRET
